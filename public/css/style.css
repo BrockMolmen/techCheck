@@ -1,3 +1,7 @@
+body, html, main {
+  height: 100%;
+}
+
 nav ul li {
   text-decoration: none;
   display: inline-block;
@@ -6,4 +10,27 @@ nav ul li {
 
 h1 {
   color: chartreuse;
+}
+
+#search-bar {
+  width: 20%;
+}
+
+#srch-icon {
+  float: right;
+  height: 1.5%;
+  width: 1.5%;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+#top-stories {
+  height: 63%;
+  width: 70%;
+}
+
+#featured-image {
+  height: 300px;
+  width: 400px;
 }
