@@ -3,34 +3,32 @@
 
 	<div class="container" id="content">
 		<div class="row">
-			<section>
-				<div class="col" id="top-stories">
+			<div class="col" id="top-stories">
+				<section>
 					<h3>Top Stories</h3>
 					<%- include('partials/top_stories.ejs') %>
-				</div>
-			</section>
-			<div class="col" id="col2">
-				<section>
-					<div class="row" id="ad">
-						<header>
-							<h5>One of these will make you love me long time.</h5>
-						</header>
-						<p><img src="" alt="ad" class="float-left">
-							Ea incididunt sint adipisicing veniam officia in sint labore minim incididunt pariatur. Id
-							fugiat cillum exercitation occaecat ad laboris proident incididunt elit. Cillum proident
-							aliqua eiusmod est magna anim deserunt ullamco Lorem consequat officia. Ea minim sunt
-							reprehenderit eu consectetur non aute amet consectetur irure aliqua ullamco tempor
-							exercitation. Incididunt aliqua sit non quis aute aliqua cillum pariatur aute.</p>
-					</div>
 				</section>
-				<section>
-					<div class="row" id="latest-stories">
-						<h3>Latest Stories</h3>
+			</div>
+			<div class="col" id="col2">
+				<div class="row" id="ad">
+					<section>
+						<header>
+							<h2>Hot Robot Women in Your Area!</h2>
+						</header>
+						<p><img src="assets/Robot woman photo.jpg" alt="ad" class="float-left" id="robot">
+							You have 1,256 messages from real robot women! Click here to meet them!
+							</p>
+				</div>
+				<div class="row" id="latest-stories">
+
+					<h3>Latest Stories</h3>
+					<div class="row">
 						<div class="container">
 							<%- include('partials/latest_stories.ejs') %>
 						</div>
 					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 		</div>
 	</div>
