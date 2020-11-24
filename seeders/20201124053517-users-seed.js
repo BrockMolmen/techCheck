@@ -24,7 +24,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        email: 'B_Excellent@email.com',
+        email: 'StopItKwis@email.com',
         firstName: 'Jamie',
         lastName: 'Cabriges',
         password: bcrypt.hashSync('password', 12),
