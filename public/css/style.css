@@ -14,13 +14,30 @@ nav ul li {
 }
 
 #search-bar {
-  width: 20%;
+  max-width: 300px;
+  max-height: 50px;
+}
+
+#logo-search-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-secondary {
+  margin-left: 20px;
+  color: rgb(56, 56, 56)
 }
 
 .btn-primary {
   background-color: #31DB16;
   margin-left: 20px;
 }
+
+.btn-primary:hover {
+  background-color: #7adf6a;
+}
+
+
 
 #srch-icon {
   float: right;
@@ -79,8 +96,20 @@ nav ul li {
 }
 
 .auth-box {
-  width: 30vw;
-  height: 40vw;
-  background-color: grey;
+  text-align: right;
+  margin-top: 20%;
+  border-radius: 5px;
+  padding: 10%;
+
+  background-color: gainsboro;
   justify-content: space-between;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  list-style: none;
+  justify-content: space-evenly;
 }
