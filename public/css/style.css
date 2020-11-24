@@ -1,5 +1,7 @@
 body, html, main {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
 }
 
 nav ul li {
@@ -9,7 +11,24 @@ nav ul li {
 }
 
 
+#ad {
+  width: 20rem;
+}
+
+#robot {
+  height: 300px;
+  width: 300px;
+}
+
 #content {
+  width: 100%;
+}
+
+#col2 {
+  width: 100%;
+}
+
+#latest-stories {
   width: 100%;
 }
 
@@ -50,7 +69,7 @@ nav ul li {
 
 #top-stories {
   height: 63%;
-  width: 70%;
+  width: 100%;
 }
 
 #featured {
@@ -58,15 +77,39 @@ nav ul li {
 }
 
 #featured-image {
-  height: 200px;
-  width: 300px;
-  margin: 0 1.1rem 0 1.1rem;
+  height: 210px;
+  width: 220px;
+  margin-top: 1.3rem;
 }
 
-#featured header {
-  text-align: center;
-  margin-left: 0.7rem;
+#meep {
+  width: 240px;
+  max-width: 200px;
 }
+
+.article_img {
+  width: 200px;
+  max-width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.card {
+  width: auto;
+  border: none !important;
+}
+.card-img-top {
+  padding: 0;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+element {
+	padding-left: 0px;
+	padding-right: 0px;
 
 .row {
   width: 80%;

@@ -1,26 +1,32 @@
 <main>
-	<h1>techCheck</h1>
-
 	<div class="container" id="content">
 		<div class="row">
-			<section>
-				<div class="col" id="top-stories">
+			<div class="col" id="top-stories">
+				<section>
 					<h3>Top Stories</h3>
-					<%- include('partials/top_stories.ejs') %> 
-				</div>
-			</section>
-			<div class="col" id="col2">
-				<section>
-					<div class="row" id="ad"></div>
+					<%- include('partials/top_stories.ejs') %>
 				</section>
-				<section>
-					<div class="row" id="latest-stories">
-						<h3>Latest Stories</h3>
+			</div>
+			<div class="col" id="col2">
+				<div class="row" id="ad">
+					<section>
+						<header>
+							<h2>Hot Robot Women in Your Area!</h2>
+						</header>
+						<p><img src="assets/Robot woman photo.jpg" alt="ad" class="float-left" id="robot">
+							You have 1,256 messages from real robot women! Click here to meet them!
+							</p>
+				</div>
+				<div class="row" id="latest-stories">
+
+					<h3>Latest Stories</h3>
+					<div class="row">
 						<div class="container">
 							<%- include('partials/latest_stories.ejs') %>
 						</div>
 					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 		</div>
 	</div>
