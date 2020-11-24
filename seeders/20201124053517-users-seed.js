@@ -8,9 +8,25 @@ module.exports = {
 
     const bulkUsers = await queryInterface.bulkInsert('users', [
       {
+        email: 'B_Excellent@email.com',
+        firstName: 'Keanu',
+        lastName: 'Reeves',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         email: 'LN@email.com',
         firstName: 'Lauren',
         lastName: 'Nguyen',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        email: 'B_Excellent@email.com',
+        firstName: 'Jamie',
+        lastName: 'Cabriges',
         password: bcrypt.hashSync('password', 12),
         createdAt: new Date(),
         updatedAt: new Date()
@@ -56,7 +72,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        email: 'RO@email.com',
+        email: 'RKO@email.com',
         firstName: 'Randy',
         lastName: 'Orton',
         password: bcrypt.hashSync('password', 12),
@@ -96,9 +112,25 @@ module.exports = {
         updatedAt: new Date()
       },
       {
+        email: 'KwEeLeSdO@email.com',
+        firstName: 'Kelso',
+        lastName: 'Coolguy',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         email: 'imabird@email.com',
         firstName: 'Mordicai',
         lastName: 'Bird',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        email: 'SweetT@email.com',
+        firstName: 'Trina',
+        lastName: 'Oolong',
         password: bcrypt.hashSync('password', 12),
         createdAt: new Date(),
         updatedAt: new Date()
@@ -136,6 +168,14 @@ module.exports = {
         updatedAt: new Date()
       },
       {
+        email: 'ElseBoo@email.com',
+        firstName: 'Elsa',
+        lastName: 'Boo',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         email: 'MarioIsMyBrother@email.com',
         firstName: 'Luigi',
         lastName: 'Mario',
@@ -147,6 +187,14 @@ module.exports = {
         email: 'RuRoo@email.com',
         firstName: 'Scooby',
         lastName: 'Doo',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        email: 'Kbear@email.com',
+        firstName: 'Knut',
+        lastName: 'Bear',
         password: bcrypt.hashSync('password', 12),
         createdAt: new Date(),
         updatedAt: new Date()
@@ -184,6 +232,14 @@ module.exports = {
         updatedAt: new Date()
       },
       {
+        email: 'daveystealssandles@email.com',
+        firstName: 'Johnnie',
+        lastName: 'Daveston',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         email: 'CantSeeMe@email.com',
         firstName: 'John',
         lastName: 'Cena',
@@ -192,9 +248,25 @@ module.exports = {
         updatedAt: new Date()
       },
       {
+        email: 'CopperRod@email.com',
+        firstName: 'Rodney',
+        lastName: 'Copper',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         email: 'Wooooooo@email.com',
         firstName: 'Rick',
         lastName: 'Flair',
+        password: bcrypt.hashSync('password', 12),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        email: 'LegoLloyd@email.com',
+        firstName: 'Lloyd',
+        lastName: 'legoland',
         password: bcrypt.hashSync('password', 12),
         createdAt: new Date(),
         updatedAt: new Date()
@@ -216,34 +288,21 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        email: 'B_Excellent@email.com',
-        firstName: 'Keanau',
-        lastName: 'Reeves',
+        email: 'billbuttlicker@email.com',
+        firstName: 'Bill',
+        lastName: 'Butcher',
         password: bcrypt.hashSync('password', 12),
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         email: 'admin@techcheck.com',
-        firstName: 'Billy',
-        lastName: 'Bigbucks',
+        firstName: 'Milton',
+        lastName: 'Megabucks',
         password: bcrypt.hashSync('password', 12),
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      // {
-      //   email: '',
-      //   firstName: '',
-      //   lastName: '',
-      //   password: bcrypt.hashSync('password', 12),
-      //   createdAt: new Date(),
-      //   updatedAt: new Date()
-      // },
-
-
-
-      
-
     ], { returning: true })
 
   },

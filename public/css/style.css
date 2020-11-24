@@ -8,9 +8,6 @@ nav ul li {
   margin-right: .3em;
 }
 
-h1 {
-  color: chartreuse;
-}
 
 #content {
   width: 100%;
@@ -18,6 +15,11 @@ h1 {
 
 #search-bar {
   width: 20%;
+}
+
+.btn-primary {
+  background-color: #31DB16;
+  margin-left: 20px;
 }
 
 #srch-icon {
@@ -51,4 +53,34 @@ h1 {
 
 .row {
   width: 80%;
+}
+
+#user-title {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#user-date {
+  padding-top: .1rem;
+}
+
+#user-table {
+  justify-content: center;
+  max-width: 70%;
+  font-size: ;
+}
+
+.even-user-row {
+  background-color: whitesmoke;
+}
+
+.odd-user-row {
+  background-color: gainsboro;
+}
+
+.auth-box {
+  width: 30vw;
+  height: 40vw;
+  background-color: grey;
+  justify-content: space-between;
 }
