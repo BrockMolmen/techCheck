@@ -10,9 +10,6 @@ nav ul li {
   margin-right: .3em;
 }
 
-h1 {
-  color: chartreuse;
-}
 
 #ad {
   width: 20rem;
@@ -36,8 +33,30 @@ h1 {
 }
 
 #search-bar {
-  width: 20%;
+  max-width: 300px;
+  max-height: 50px;
 }
+
+#logo-search-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-secondary {
+  margin-left: 20px;
+  color: rgb(56, 56, 56)
+}
+
+.btn-primary {
+  background-color: #31DB16;
+  margin-left: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #7adf6a;
+}
+
+
 
 #srch-icon {
   float: right;
@@ -87,7 +106,53 @@ h1 {
   padding-right: 0;
 }
 
+
 element {
 	padding-left: 0px;
 	padding-right: 0px;
+
+.row {
+  width: 80%;
+}
+
+#user-title {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#user-date {
+  padding-top: .1rem;
+}
+
+#user-table {
+  justify-content: center;
+  max-width: 70%;
+  font-size: ;
+}
+
+.even-user-row {
+  background-color: whitesmoke;
+}
+
+.odd-user-row {
+  background-color: gainsboro;
+}
+
+.auth-box {
+  text-align: right;
+  margin-top: 20%;
+  border-radius: 5px;
+  padding: 10%;
+
+  background-color: gainsboro;
+  justify-content: space-between;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  list-style: none;
+  justify-content: space-evenly;
 }

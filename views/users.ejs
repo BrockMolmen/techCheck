@@ -1,12 +1,38 @@
+<main>
+<div class="container" id="user-title">
+<h3>Users Information Report</h3> 
+<h4 id="user-date">November 24, 2020</h4>
+</div>
 
-<h1>All Users</h1>
+<div class="container" id="user-table">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let i = 0; i < users.length; i++) { %>
+        
+          <% if (i % 2 == 0) { %>
+            <tr class="even-user-row">
+          <% } else { %>
+            <tr class="odd-user-row">
+          <% } %>
+        <th scope="row"><%= i+1 %></th>
+        <td><%= users[i].firstName %></td>
+        <td><%= users[i].lastName %></td>
+        <td><%= users[i].email %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
 
 
-<% for (let i = 0; i < users.length; i++) { %>
-  <div class="user-card">
-        <div>
-          <p><%=i+1%> . <%= users[i].firstName %> <%= users[i].lastName %> <%= users[i].email %></p> 
-      </div>
-  </div>
-  <% } %>
+</main>
+
 
