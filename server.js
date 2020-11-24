@@ -3,6 +3,7 @@ const express = require('express');
 const layouts = require('express-ejs-layouts');
 const session = require('express-session')
 const flash = require('connect-flash');
+const db = require('./models')
 const passport = require('./config/ppConfig');
 const isLoggedIn = require('./middleware/isLoggedIn');
 const app = express();
@@ -36,12 +37,18 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/profile', isLoggedIn, (req, res) => {
-  res.render('profile');
-});
+app.get('/allusers', (req, res) => {
+  db.user.findAll().then(foundUsers => {
+    res.render('users', { users: foundUsers })
+  })
+})
+
+
 
 app.use('/auth', require('./routes/auth'));
 
-var server = app.listen(process.env.PORT || 3000, ()=> console.log(`🎧You're listening to the smooth sounds of port ${process.env.PORT || 3000}🎧`));
+
+
+var server = app.listen(process.env.PORT || 3000, ()=> console.log(` Holla' ${process.env.PORT || 3000}`));
 
 module.exports = server;
