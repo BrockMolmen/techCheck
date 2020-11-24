@@ -1,1 +1,27 @@
-<h2>Homepage</h2>
+<main>
+	<h1>techCheck</h1>
+
+	<div class="container" id="content">
+		<div class="row">
+			<section>
+				<div class="col" id="top-stories">
+					<h3>Top Stories</h3>
+					<%- include('partials/top_stories.ejs') %> 
+				</div>
+			</section>
+			<div class="col" id="col2">
+				<section>
+					<div class="row" id="ad"></div>
+				</section>
+				<section>
+					<div class="row" id="latest-stories">
+						<h3>Latest Stories</h3>
+						<div class="container">
+							<%- include('partials/latest_stories.ejs') %>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</main>
