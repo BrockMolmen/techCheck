@@ -59,16 +59,18 @@ h1 {
 
 #featured-image {
   height: 210px;
-  width: 300px;
+  width: 220px;
   margin-top: 1.3rem;
 }
 
 #meep {
   width: 240px;
+  max-width: 200px;
 }
 
 .article_img {
-  width: 250px;
+  width: 200px;
+  max-width: 200px;
   height: 200px;
   padding: 20px;
 }
@@ -76,4 +78,16 @@ h1 {
 .card {
   width: auto;
   border: none !important;
+}
+.card-img-top {
+  padding: 0;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+element {
+	padding-left: 0px;
+	padding-right: 0px;
 }
