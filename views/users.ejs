@@ -1,2 +1,12 @@
 
-<h1>Hello</h1>
+<h1>All Users</h1>
+
+
+<% for (let i = 0; i < users.length; i++) { %>
+  <div class="user-card">
+        <div>
+          <p><%=i+1%> . <%= users[i].firstName %> <%= users[i].lastName %> <%= users[i].email %></p> 
+      </div>
+  </div>
+  <% } %>
+
