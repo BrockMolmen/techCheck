@@ -12,6 +12,10 @@ h1 {
   color: chartreuse;
 }
 
+#content {
+  width: 100%;
+}
+
 #search-bar {
   width: 20%;
 }
@@ -30,7 +34,21 @@ h1 {
   width: 70%;
 }
 
+#featured {
+  width: 99%;
+}
+
 #featured-image {
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 300px;
+  margin: 0 1.1rem 0 1.1rem;
+}
+
+#featured header {
+  text-align: center;
+  margin-left: 0.7rem;
+}
+
+.row {
+  width: 80%;
 }
