@@ -40,7 +40,14 @@ app.get('/profile', isLoggedIn, (req, res) => {
   res.render('profile');
 });
 
+app.get('/allusers', (req, res) => {
+  console.log('hello from users')
+  res.render('users')
+})
+
 app.use('/auth', require('./routes/auth'));
+// app.use('/users', require('./routes/index'));
+
 
 var server = app.listen(process.env.PORT || 3000, ()=> console.log(` Holla' ${process.env.PORT || 3000}`));
 
